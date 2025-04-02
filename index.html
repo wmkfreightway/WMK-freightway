@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WMK Freightway Inc.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0c1a2a;
+      color: #fff;
+    }
+    header {
+      background-color: #1a2f46;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 60px;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fbae17;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .hero {
+      background-image: url('https://cdn.pixabay.com/photo/2017/09/20/10/38/truck-2762344_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      font-size: 2.5rem;
+      color: #fbae17;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      color: #ff5722;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #1a2f46;
+      color: #ddd;
+      text-align: center;
+      padding: 2rem;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+      .hero {
+        height: 300px;
+      }
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="WMK Freightway Logo">
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Fleet</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Reliable Long Haul Trucking Across the Nation</h1>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <p>
+      WMK Freightway Inc. specializes in long-haul freight transport for both dry goods and temperature-sensitive products. Operating out of California, our fleet travels coast-to-coast, servicing the Midwest and East Coast with efficiency, reliability, and precision. With a modern lineup of 2024 Volvo sleeper cab trucks and refrigerated Thermo King trailers, we deliver your cargo in top condition—on time, every time.
+    </p>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Our Fleet</h2>
+    <div class="gallery">
+      <img src="https://www.volvotrucks.us/media/volvo-vnl-860.png" alt="Volvo Truck 2024">
+      <img src="https://thermoking.com/sites/default/files/styles/hero_xl/public/2021-03/precedent_s-600m_product_photo.jpg" alt="ThermoKing Trailer">
+      <img src="https://www.trucks.com/wp-content/uploads/2022/07/Volvo-VNL-760-Exterior.jpg" alt="Volvo Sleeper Cab">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:trucking@wmkfreightway.com" style="color: #fbae17;">trucking@wmkfreightway.com</a></p>
+    <p>Phone: <a href="tel:+17205392403" style="color: #fbae17;">+1 (720) 539-2403</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WMK Freightway Inc. All rights reserved.</p>
+  </footer>
+</body>
+</html>
