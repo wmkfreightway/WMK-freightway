@@ -1,101 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WMK Freightway Inc.</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: url('logo.png') no-repeat center center fixed;
-      background-size: cover;
-      background-color: #0c1a2a;
-      color: #fff;
-    }
-    header {
-      background-color: rgba(26, 47, 70, 0.9);
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    header img {
-      height: 60px;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #fbae17;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .hero {
-      background-color: rgba(0, 0, 0, 0.6);
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .hero h1 {
-      padding: 2rem;
-      font-size: 2.5rem;
-      color: #fbae17;
-    }
-    .section {
-      background-color: rgba(12, 26, 42, 0.9);
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      border-radius: 10px;
-      margin-bottom: 3rem;
-    }
-    .section h2 {
-      color: #ff5722;
-    }
-    .section p {
-      line-height: 1.8;
-      margin-bottom: 1.5rem;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    }
-    footer {
-      background-color: rgba(26, 47, 70, 0.9);
-      color: #ddd;
-      text-align: center;
-      padding: 2rem;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background-color: #0c1a2a; color: #fff; }
+    header { background-color: #1a2f46; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 999; }
+    header img { height: 50px; }
+    nav a { color: #fbae17; margin: 0 1rem; text-decoration: none; font-weight: 600; }
+    .hero { background: url('logo.png') no-repeat center center fixed; background-size: cover; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; }
+    .hero h1 { font-size: 3rem; color: #fff; background-color: rgba(0, 0, 0, 0.6); padding: 1rem 2rem; border-radius: 10px; }
+    section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
+    section h2 { color: #ff5722; margin-bottom: 1rem; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.6); }
+    form { display: flex; flex-direction: column; gap: 1rem; }
+    input, textarea { padding: 0.75rem; border: none; border-radius: 5px; font-size: 1rem; }
+    button { background: #fbae17; color: #000; padding: 0.75rem; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; }
+    footer { background-color: #1a2f46; padding: 2rem; text-align: center; color: #ccc; }
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav {
-        margin-top: 1rem;
-      }
-      .hero {
-        height: 300px;
-      }
-      .hero h1 {
-        font-size: 1.75rem;
-      }
+      .hero h1 { font-size: 2rem; }
+      nav a { display: inline-block; margin: 0.5rem 0; }
     }
   </style>
 </head>
@@ -103,31 +31,31 @@
   <header>
     <img src="logo.png" alt="WMK Freightway Logo">
     <nav>
+      <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#gallery">Fleet</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#quote">Quote</a>
+      <a href="#careers">Careers</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Reliable Long Haul Trucking Across the Nation</h1>
+  <div class="hero">
+    <h1>Reliable Long-Haul Trucking Nationwide</h1>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>WMK Freightway Inc. is a trusted name in long-haul transportation, proudly serving clients from California to the Midwest and East Coast. We are committed to excellence, integrity, and timely delivery with a modern fleet and experienced drivers. Our company believes in customer-first logistics, providing refrigerated and dry freight solutions with precision and care.</p>
   </section>
 
-  <section class="section" id="services">
+  <section id="services">
     <h2>Our Services</h2>
-    <p>
-      At WMK Freightway Inc., we specialize in long-haul freight transportation, offering dependable delivery solutions across the country. Our fleet moves both dry goods and temperature-sensitive refrigerated products with precision and care. We understand the importance of timely logistics and cargo integrity, which is why we tailor each delivery to meet strict industry standards.
-    </p>
-    <p>
-      With routes stretching from California all the way to the Midwest and East Coast, our commitment to reliable coast-to-coast service ensures your goods reach their destination on schedule. We pride ourselves on professionalism, safety, and a team of experienced drivers who understand the value of what you ship.
-    </p>
-    <p>
-      Whether you're a local grower, national distributor, or enterprise retailer, WMK Freightway is your partner in logistics. Our service is built on trust, accountability, and consistent performance—making us a preferred carrier for clients nationwide.
-    </p>
+    <p>We offer comprehensive freight transportation services including full truckload (FTL), less-than-truckload (LTL), and dedicated lane shipments. Our refrigerated trailers ensure temperature-sensitive goods arrive safely, while our reliable dry van service is ideal for all other cargo types. WMK Freightway guarantees safe and efficient transport, powered by a dedicated team and top-tier equipment.</p>
   </section>
 
-  <section class="section" id="gallery">
-    <h2>Our Fleet in Action</h2>
+  <section id="gallery">
+    <h2>Fleet Gallery</h2>
     <div class="gallery">
       <img src="https://images.unsplash.com/photo-1617292313742-fb3d76cbd6c4?auto=format&fit=crop&w=600&q=80" alt="Truck 1">
       <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80" alt="Truck 2">
@@ -136,10 +64,34 @@
     </div>
   </section>
 
-  <section class="section" id="contact">
+  <section id="quote">
+    <h2>Request a Quote</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Pickup & Delivery Locations" required>
+      <textarea placeholder="Describe your freight and needs" rows="4" required></textarea>
+      <button type="submit">Request Quote</button>
+    </form>
+  </section>
+
+  <section id="careers">
+    <h2>Careers - Apply to Drive</h2>
+    <p>We’re always looking for skilled, dependable drivers to join our team. At WMK Freightway, we offer competitive pay, consistent routes, and a family-first culture. If you’re interested in a rewarding trucking career, fill out the application below.</p>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea placeholder="Driving Experience / Message" rows="4"></textarea>
+      <button type="submit">Apply Now</button>
+    </form>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:trucking@wmkfreightway.com" style="color: #fbae17;">trucking@wmkfreightway.com</a></p>
-    <p>Phone: <a href="tel:+17205392403" style="color: #fbae17;">+1 (720) 539-2403</a></p>
+    <p>Email: <a href="mailto:trucking@wmkfreightway.com" style="color:#fbae17">trucking@wmkfreightway.com</a></p>
+    <p>Phone: <a href="tel:+17205392403" style="color:#fbae17">+1 (720) 539-2403</a></p>
+    <p>Address: <span style="color:#fbae17">5770 N Gentry Ave #127, Fresno, CA 93711</span></p>
   </section>
 
   <footer>
